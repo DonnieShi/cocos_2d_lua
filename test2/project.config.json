@@ -1,0 +1,38 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"是否检查安全域名和 TLS 版本": "",
+		"urlCheck": true,
+		"是否启用 es5 转 es6": "",
+		"es6": true,
+		"上传代码时样式是否自动补全": "",
+		"postcss": true,
+		"上传代码时是否自动压缩": "",
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"基础库版本": "",
+	"libVersion": "1.9.91",
+	"appid": "wxf9cb1f8ade013929",
+	"projectname": "test2",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

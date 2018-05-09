@@ -1,0 +1,4 @@
+<view class ="containner-settings">
+	<image class = "img-awatar" src="{{avatarLink}}" mode = "aspectFill"></image>
+	<text class="link-text">{{githubLink}}</text> 
+</view>

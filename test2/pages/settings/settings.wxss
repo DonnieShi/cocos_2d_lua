@@ -1,0 +1,16 @@
+/**settings.wxss**/
+.container-settings {
+  height: 1200px;
+}
+.img-awatar {
+  width: 80%;
+  height: 80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.link-text {
+  color: #46bd3c;
+  margin-top: 400px;
+  margin-left:auto;
+}
