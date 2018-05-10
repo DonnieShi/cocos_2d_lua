@@ -1,21 +1,21 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
-		"是否检查安全域名和 TLS 版本": "",
-		"urlCheck": true,
-		"是否启用 es5 转 es6": "",
+		"urlCheck": false,
 		"es6": true,
-		"上传代码时样式是否自动补全": "",
 		"postcss": true,
-		"上传代码时是否自动压缩": "",
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"是否检查安全域名和 TLS 版本": "",
+		"是否启用 es5 转 es6": "",
+		"上传代码时样式是否自动补全": "",
+		"上传代码时是否自动压缩": ""
 	},
 	"compileType": "miniprogram",
 	"基础库版本": "",
 	"libVersion": "1.9.91",
 	"appid": "wxf9cb1f8ade013929",
-	"projectname": "test2",
+	"projectname": "imageShow",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

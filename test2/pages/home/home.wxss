@@ -1,0 +1,28 @@
+.menu{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background: #fff;
+	border-bottom: #eee solid 1px;
+	z-index: 100000;
+	margin-bottom: 39px;
+	display: block;
+}
+
+.top-nav{
+	white-space: nowrap;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.top-btn{
+	display: inline-block;
+	padding: 22rpx;
+	font-size: 16px;
+}
+
+.top-hoverd-btn{
+	color: #42bd56;
+	font-size: 17px;
+	border-bottom: #42bd56 solid 1px;
+}

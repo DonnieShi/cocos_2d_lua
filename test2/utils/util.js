@@ -1,19 +1,39 @@
-const formatTime = date => {
-  const year = date.getFullYear()
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-  const hour = date.getHours()
-  const minute = date.getMinutes()
-  const second = date.getSeconds()
+var conf = require('../conf.js');
 
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+function getUrl(rout,params){
+  var param = "";
+  if (isEmpty(params)) {
+    param = urlParamCombine(params);
+  }
+  // https://${conf.baseDomain}${route}${param}
+  return 'http://' + conf.baseDomain + rout+param
 }
 
-const formatNumber = n => {
-  n = n.toString()
-  return n[1] ? n : '0' + n
+function isEmpty(obj){
+  if (typeof(obj) == "undefined" || (!obj && typeof(obj) != "undefined" && obj != 0)) {
+    return true;
+  }
+  for (let i in obj) {
+    return false;
+  }
+  return true;
 }
 
-module.exports = {
-  formatTime: formatTime
+function urlParamCombine(arr){
+  var param = "?";
+  for (var key in arr){
+    if (typeof(arr[key]) == 'array'|| typeof(arr[key]) == 'object') {
+      for(var k in arr[key]){
+        param += (k+"="+arr[key][k]+"&");
+      }
+    }else{
+      param += (key + "=" + arr[key]+"&");
+    }
+  }
+  return param.substr(0,param.length - 1);
+}
+
+module.exports={
+  isEmpty:isEmpty,
+  getUrl:getUrl
 }

@@ -1,16 +1,21 @@
 /**settings.wxss**/
 .container-settings {
-  height: 1200px;
+  height: 1200rpx;
 }
-.img-awatar {
-  width: 80%;
-  height: 80%;
-  margin-left:auto;
-  margin-right:auto;
+.img-avatar {
+  display: block;
+  width: 300rpx;
+  height: 300rpx;
+  margin: 20rpx auto;
+  margin-top: 40rpx;
+  border-radius: 50%;
 }
 
 .link-text {
   color: #46bd3c;
-  margin-top: 400px;
-  margin-left:auto;
+  padding: 0px;
+  width:500px;
+  text-align:center;
+  display: table-cell;
+  vertical-align:middle;
 }
